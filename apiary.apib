@@ -3,20 +3,20 @@ FORMAT: 1A
 # flyer
 This api is a mockup api for flyer base advertisement service on mobile platform.
 
-# Group Notes
-Notes related resources of the **Notes API**
+# Group Flyers
+Flyers related resources of the **Flyers API**
 
-## Notes Collection [/notes]
-### List all Notes [GET]
+## Flyers Collection [/flyers]
+### List all Flyers [GET]
 + Response 200 (application/json)
 
         [{
-          "id": 1, "title": "Jogging in park"
+          "id": 1, "title": "Lotte Mart"
         }, {
-          "id": 2, "title": "Pick-up posters from post-office"
+          "id": 2, "title": "Pico Plaza"
         }]
 
-### Create a Note [POST]
+### Create a Flyer [POST]
 + Request (application/json)
 
         { "title": "Buy cheese and bread for breakfast." }
@@ -25,13 +25,13 @@ Notes related resources of the **Notes API**
 
         { "id": 3, "title": "Buy cheese and bread for breakfast." }
 
-## Note [/notes/{id}]
-A single Note object with all its details
+## Flyer [/flyers/{id}]
+A single Flyer object with all its details
 
 + Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    + id (required, number, `1`) ... Numeric `id` of the Flyer to perform action with. Has example value.
 
-### Retrieve a Note [GET]
+### Retrieve a Flyer [GET]
 + Response 200 (application/json)
 
     + Header
@@ -42,5 +42,5 @@ A single Note object with all its details
 
             { "id": 2, "title": "Pick-up posters from post-office" }
 
-### Remove a Note [DELETE]
+### Remove a Flyer [DELETE]
 + Response 204
